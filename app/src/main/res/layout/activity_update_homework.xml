@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvUpdateHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✏️ Update Homework"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Container -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Spinner -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Subject"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="6dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSubjects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:backgroundTint="#6200EE"
+                    android:popupBackground="#FFFFFF" />
+
+                <!-- Description -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="#666666"
+                    android:layout_marginTop="16dp" />
+
+                <EditText
+                    android:id="@+id/etUpdateDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter description"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <!-- Due Date -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date"
+                    android:textColor="#666666"
+                    android:layout_marginTop="16dp" />
+
+                <EditText
+                    android:id="@+id/etUpdateDueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="YYYY-MM-DD"
+                    android:background="@drawable/edittext_background"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <!-- Update Button -->
+                <Button
+                    android:id="@+id/btnUpdateHomework"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Homework"
+                    android:layout_marginTop="24dp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#6200EE"
+                    android:letterSpacing="0.05"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
